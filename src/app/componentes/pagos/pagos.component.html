@@ -1,0 +1,32 @@
+<div class="pagos">
+  <div class="container">
+    <h1 class="text-center">Plataforma de Pago</h1>
+    <form action="procesar_pago.php" method="post">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"
+                class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="tarjeta">Número de Tarjeta:</label>
+            <input type="text" id="tarjeta" name="tarjeta"
+                class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="vencimiento">Fecha de Vencimiento:</label>
+            <input type="text" id="vencimiento" name="vencimiento"
+                class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" class="form-control"
+                required>
+        </div>
+        <div class="form-group btns">
+            <input  value="Pagar" class="btn btn-success">
+            <input value="Cancelar" class="btn btn-secondary" routerLink="/menu/carrito">
+        </div>
+    </form>
+  </div>
+</div>
+

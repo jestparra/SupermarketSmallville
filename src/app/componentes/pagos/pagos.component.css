@@ -1,0 +1,35 @@
+form {
+  max-width: 500px;
+  margin: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+.btn-success {
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 2%;
+}
+.btn-success:hover {
+  background-color: #f7b776;
+}
+
+.pagos{
+  height: 100vh;
+  background-color: rgb(242,242,242);
+}
+.btns{
+  text-align: center;
+}

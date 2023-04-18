@@ -1,0 +1,83 @@
+.mySlides{
+  width: 70%;
+  height: 450px;
+  display: none;
+}
+.slider{
+  text-align: center;
+  padding-top: 2%;
+}
+
+#descripcion {
+  /* flex: 55; */
+  margin-right: 30px;
+}
+
+#contenido {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 100%;
+}
+
+#campos {
+  display: flex;
+}
+
+#campos input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border-color: gray;
+  width: 400px;
+}
+
+#campos button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #ff9933;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#campos button[type="submit"]:hover{
+  background-color: #f69024d1
+}
+
+/* Estilos de la sección de productos */
+
+.estrellas {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.estrellas i {
+	color: #f90;
+	margin-right: 5px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  cursor: pointer;
+  border:  none;
+  width:33%;
+  padding: 0% 2% 2% 0%;
+  display: inline-block;
+}
+
+.card-body{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card-body:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}

@@ -1,0 +1,61 @@
+.card {
+  /* Add shadows to create the "card" effect */
+  cursor: pointer;
+  border:  none;
+  width:25%;
+  padding: 0% 2% 2% 0%;
+  display: inline-block;
+}
+
+.card-body{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card-body:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.pay-btn {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #ff9933;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height:  60px;
+  width: 200px;
+  font-size: 30px;
+
+}
+
+.pay-btn:hover {
+  background-color: #f69024d1;
+}
+
+.pay{
+  text-align: center;
+}
+
+.delete{
+  float: right;
+  display: flex;
+  padding-right: 5%;
+  padding-top: 5%;
+  font-size: 50px;
+  color: red;
+  cursor: pointer;
+}
+
+.values {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
