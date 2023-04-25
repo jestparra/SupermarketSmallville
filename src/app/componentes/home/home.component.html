@@ -1,3 +1,4 @@
+<!-- Se crea el slider el cual cambia automaticamente cada 5 segundos -->
 <div class="slider">
   <img class="mySlides" [style.display]="(currentSlide == 0)?'initial':'none'" src="../../../assets/Imagenes/Banner_1.jpg">
   <img class="mySlides" [style.display]="(currentSlide == 1)?'initial':'none'" src="../../../assets/Imagenes/Banner_2.jpg">
@@ -5,9 +6,11 @@
   <img class="mySlides" [style.display]="(currentSlide == 3)?'initial':'none'" src="../../../assets/Imagenes/Banner_4.webp">
 </div>
 <br><br><br><br>
+<!-- Se reutiliza el componente de quienes somos -->
 <app-quienes-somos></app-quienes-somos>
 <hr>
 
+<!-- Se crea la seccion de susbrición -->
 <h1>Suscribción</h1>
 <div id="contenido">
   <div id="descripcion">
@@ -20,13 +23,16 @@
 </div>
 <hr>
 
+<!-- Se crea la seccion de promociones  -->
 <h1>Promociones</h1>
 <div class="card">
   <div class="card-body">
+    <!-- Se utlizan las imagenes que se encuentran el los assets del proyecto -->
     <img src="../../../assets/Imagenes/1.webp" alt="Avatar" style="width:100%">
     <div class="container">
       <h3>Galletas Orego</h3>
       <p>$12.000</p>
+      <!-- Se hace uso de la estrellas para mostrar la calidad de los productos -->
       <div class="estrellas">
         <i class="fa fa-star"></i>
         <i class="fa fa-star"></i>

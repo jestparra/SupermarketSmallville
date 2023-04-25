@@ -1,3 +1,5 @@
+/* Se agregan los estandares de tamaño y tipo de fuente para toda la página */
+/* Se aplica este estandar a todas las etiquetas h1,p,a,h3,h4,h2 y label de la pagina  */
 h1{
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;

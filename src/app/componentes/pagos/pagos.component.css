@@ -1,3 +1,4 @@
+/* Se agregan los estilos del formulario de pagos */
 form {
   max-width: 500px;
   margin: auto;
@@ -15,6 +16,7 @@ input[type="text"] {
   margin-top: 6px;
   margin-bottom: 16px;
 }
+/* Se modifica el estandar de los botones */
 .btn-success {
   background-color: #ff8c00;
   color: white;
@@ -25,11 +27,12 @@ input[type="text"] {
 .btn-success:hover {
   background-color: #f7b776;
 }
-
+/* Se agrega el tamaño y color de fondo */
 .pagos{
   height: 100vh;
   background-color: rgb(242,242,242);
 }
+/* Se centran los botones */
 .btns{
   text-align: center;
 }

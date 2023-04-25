@@ -1,3 +1,4 @@
+/* Se agrega el estilo de la carta que muestra el prouducto tanto del encabezado como del cuerpo */
 .card {
   cursor: pointer;
   border:  none;
@@ -12,16 +13,16 @@
 
 }
 
-/* On mouse-over, add a deeper shadow */
 .card-body:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/* Add some padding inside the card container */
+/* Se agrega un padding al contenedor */
 .container {
   padding: 2px 16px;
 }
 
+/* Se agregan los estilos al boton de añadir */
 .anadir{
   border: none;
   background-color: #ff9933;

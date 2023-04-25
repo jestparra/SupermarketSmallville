@@ -11,7 +11,7 @@ export class AdminProductosComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  // Metodo encargado de asignar el modulo actual de la crud
   OnChangeModule(value: number){
     this.module = value;
   }

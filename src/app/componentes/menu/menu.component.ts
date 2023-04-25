@@ -14,6 +14,7 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // Se crea el metodo encargado de indicar si el sidebar izquierdo se encuentra abierto o cerrado
   openNav() {
     this.open = !this.open;
   }

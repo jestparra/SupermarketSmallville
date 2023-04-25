@@ -1,3 +1,4 @@
+/* Se agregan los estilos para el sidebar de la izquierda */
 .sidebar {
   height: 100%;
   width: 0;
@@ -10,7 +11,7 @@
   padding-top: 60px;
   transition: 0.5s;
 }
-
+/* Se agregan los estilos  para las etiquetas a que se encuentren dentro del sidebar */
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -19,17 +20,18 @@
   display: block;
   transition: 0.3s;
 }
-
+/* Se agrega color y fondo al evento hover de las etiquetas a que se encuentre dentro de la clase sidebar */
 .sidebar a:hover {
   color: #f1f1f1;
   background-color: #f7b776;
 }
 
+/* Se agrega color y fondo al evento hover de las etiquetas a que se encuentre dentro de la clase dropdown-contentt */
 .dropdown-contentt a:hover {
   color: #f1f1f1;
   background-color: #f7b776;
 }
-
+/* Se modifican las posiciones,tamaño de fuentoe y margen de las clases sidebar closebtn */
 .sidebar .closebtn {
   position: absolute;
   top: 0;
@@ -38,6 +40,7 @@
   margin-left: 50px;
 }
 
+/* Se agrega el estilo de el boton encargado de abrir el sidebar */
 .openbtn {
   float: left;
   font-size: 35px;
@@ -47,27 +50,30 @@
   padding: 10px 15px;
   border: none;
 }
-
+/* Se agrega el vento hover al boton de abrir el sidebar */
 .openbtn:hover {
   background-color: #ff9933;
 }
 
-
+/* Se le agrega el efecto de transición para cuando se abre o se cierra el sidebar */
 #main {
   transition: margin-left .5s;
   padding: 20px;
 }
 
+/* Se altera la media para que se mantenga la distribución de tamaños al abrir el sidebar */
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
 
+/* Se agrega estilos a todo el topnav */
 .topnav {
   background-color:  #ff9933;
   overflow: hidden;
 }
 
+/* Se agrega posición, color y decoraciones a tonav de la izquierda */
 .topnav-leftt {
   float: left;
   font-size: 40px;
@@ -77,11 +83,13 @@
   border: none;
 }
 
+/* Se agrega posición al topnav de la derecha */
 .topnav-rightt {
   float: right;
   display: flex;
 }
 
+/* Se agregan los diferentes estilos del dropdown de usuario */
 .dropdownn .dropbtnn {
   font-size: 40px;
   cursor: pointer;
@@ -123,6 +131,7 @@
   display: block;
 }
 
+/* Se modifica el contenedor que va a renderizar a los hijos dejando un margen a lado y lado */
 .container {
   margin:1% auto;
   width:90%;
@@ -133,7 +142,7 @@
   color: inherit;
 }
 
-/* Footer */
+/* Se agregan todas las decoraciones y ajuste de posición al pie de pagina */
 footer {
   transition: margin-left .5s;
   padding: 20px;

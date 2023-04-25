@@ -1,3 +1,4 @@
+<!-- Se hace uso del ngFor para listar todos los productos mediante cartas -->
 <div class="card" *ngFor="let prod of productos" >
   <div class="card-body" (click)="OnClickProd(prod)">
     <img [src]="prod.url" alt="Avatar" style="width:100%">
@@ -8,6 +9,7 @@
   </div>
 </div>
 
+<!-- Se crea el modal el cual se abre al momento de dar click en alguno de los productos y muestra el detalle del mismo -->
 <div class="modal" id="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -16,6 +18,7 @@
         <h2><b>-20%</b></h2>
       </div>
       <div class="modal-body">
+        <!-- Se crea la imagen de forma dinamica dependiendo de lo que se traiga en el objeto -->
         <img [src]="selectedProd.url" alt="Avatar" style="width:100%">
         <h3><b>Precio: </b>{{selectedProd.precio}}$</h3>
         <h4><b>Unidades en existencia: </b>10</h4>

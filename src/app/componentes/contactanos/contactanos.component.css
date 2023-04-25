@@ -1,4 +1,5 @@
 
+/* Se crean los estilos para el encabezado de la sección */
 .section-header h3 {
   font-size: 32px;
   color: #111;
@@ -42,7 +43,7 @@
 #team .member .social a:hover {
   color: goldenrod;
 }
-
+/* Se crean los estilos para el cuerpo de la sección y el formulario de contactanos */
 #contact {
   padding: 60px 0;
 }

@@ -1,3 +1,4 @@
+/* Se agrega el estilo del slider */
 .mySlides{
   width: 70%;
   height: 450px;
@@ -7,19 +8,17 @@
   text-align: center;
   padding-top: 2%;
 }
-
+/* Se agrega la margen a la descricion en la parte de la suscripción*/
 #descripcion {
-  /* flex: 55; */
   margin-right: 30px;
 }
-
+/* Se alinean los items en la parte de la suscripción */
 #contenido {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   width: 100%;
 }
-
+/* Se agregan los estilos de los campos en la parte de suscripción */
 #campos {
   display: flex;
 }
@@ -59,7 +58,6 @@
 }
 
 .card {
-  /* Add shadows to create the "card" effect */
   cursor: pointer;
   border:  none;
   width:33%;
@@ -72,12 +70,10 @@
   transition: 0.3s;
 }
 
-/* On mouse-over, add a deeper shadow */
 .card-body:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
 }

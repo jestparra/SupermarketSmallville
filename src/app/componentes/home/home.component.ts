@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   maxSlides:number = 3;
   constructor() { }
 
+  // Ejecutar cambio de slide cada 5 segundos
   ngOnInit(): void {
     setInterval(() => {
       this.currentSlide = this.currentSlide == this.maxSlides? 0 : this.currentSlide+1;

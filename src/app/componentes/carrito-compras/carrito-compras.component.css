@@ -1,5 +1,5 @@
+/* Se agregan estilos a las cartas que van a mostar los productos */
 .card {
-  /* Add shadows to create the "card" effect */
   cursor: pointer;
   border:  none;
   width:25%;
@@ -12,16 +12,16 @@
   transition: 0.3s;
 }
 
-/* On mouse-over, add a deeper shadow */
 .card-body:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/* Add some padding inside the card container */
+/* Se modifica el padding del contenedor */
 .container {
   padding: 2px 16px;
 }
 
+/* Se agrega el estilo al boton de pagar  */
 .pay-btn {
   text-align: center;
   padding: 10px 20px;
@@ -35,7 +35,6 @@
   font-size: 30px;
 
 }
-
 .pay-btn:hover {
   background-color: #f69024d1;
 }
@@ -43,7 +42,7 @@
 .pay{
   text-align: center;
 }
-
+/* Se agregane stilos al boton de eliminar con el objetivo de que se vea proporcional */
 .delete{
   float: right;
   display: flex;

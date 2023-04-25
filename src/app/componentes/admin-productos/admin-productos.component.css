@@ -1,20 +1,23 @@
+/* Estilos para la seccion de la botonera */
 .admin {
   border: 1px solid #ccc;
   padding: 1rem;
-
 }
 
+/* Se agrega el margen y el tamaño del contenedor */
 .container{
   margin: 2rem auto;
   max-width: 800px;
 }
 
+/* Se espacian los botones de la acciones */
 .actions {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 
+/* Se agregan los estilos para todos los formularios de la CRUD */
 .form label {
   display: block;
   margin-bottom: 0.5rem;
@@ -38,6 +41,7 @@
   cursor: pointer;
 }
 
+/* Se agregan los estilos para la listas de la CRUD */
 .list ul {
   list-style: none;
   margin: 0;
@@ -49,7 +53,7 @@
   padding: 1rem;
   margin-bottom: 0.5rem;
 }
-
+/* Se agregan los estilos para la tablas de la CRUD */
 table {
   border: 1px solid black;
   border-collapse: collapse;

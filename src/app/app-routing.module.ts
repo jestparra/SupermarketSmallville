@@ -10,7 +10,9 @@ import { ContactanosComponent } from './componentes/contactanos/contactanos.comp
 import { AdminProductosComponent } from './componentes/admin-productos/admin-productos.component';
 import { PagosComponent } from './componentes/pagos/pagos.component';
 
+// Archivo de rutas encargado de determinar el manejo de las redirecciones de las páginas
 const routes: Routes = [
+  // Componente menu el cual va a tener como hijos home,productos,quienes-somos,carrito,contactanos y adminProd
   {
     path:'menu',
     component: MenuComponent,
@@ -23,9 +25,14 @@ const routes: Routes = [
       {path: 'adminProd', component: AdminProductosComponent },
     ]
   },
+  // Login el cual es el primero en renderizase
   {path: 'login', component: LoginComponent },
+  //Pagos el cual se debe renderizar fuera del menu
   {path: 'pagos', component: PagosComponent },
+  //Todas las rutas erroneas o rutas vacias redirigen al login
   { path: '**', pathMatch: 'full',redirectTo: 'login' },
+
+  // Mejora pendiente agregar el canActivate con el objetivo de mejorar la seguridad y evitar el ingreso por rutas saltandose el login
 ];
 
 @NgModule({

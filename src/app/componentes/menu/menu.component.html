@@ -1,3 +1,5 @@
+<!-- Se genera el sideBar encargado de renderizar el menú de la izquierda y se le agregan las opciones -->
+<!-- Se utilizan los routerLink para realizar el redireccionamiento estas rutas estan estipuladas en el archivo de routing -->
 <div id="mySidebar" class="sidebar" [style.width]="(open)?'250px':'0px'">
   <a routerLink="/menu/productos">Productos</a>
   <a routerLink="/menu/quienes-somos">Sobre Nosotros</a>
@@ -5,37 +7,48 @@
   <a routerLink="/menu/contactanos">Contáctanos</a>
 </div>
 
+<!-- Se crea el topnav, el cual es el menu superior que posee el titulo de la pagina, y las opciones de carrito de comprar y perfil -->
+<!-- Se hace uso de la variable open la cual se activa cuando el sideBar esta abierto, esto con el objetivo de redimencionar toda la pagina -->
 <div id="main" [style.marginLeft]="(open)?'250px':'0px'">
   <div class="topnav">
+    <!-- Se agrega el evento click para modificar la variable open a true -->
     <button class="openbtn" (click)="openNav()">&#9776;</button>
+    <!-- Se crea el menu izquiero que se encarga de renderizar el titulo y su redireccionamiento -->
     <div class="topnav-leftt">
       <a class="name" routerLink="/menu/home">SuperMarket SmallVille</a>
     </div>
+    <!-- Se crea el menu derecho el cual posee el carrito de compras y el perfil -->
     <div class="topnav-rightt">
       <div class="dropdownn">
         <button class="dropbtnn" routerLink="/menu/carrito">
+          <!-- Se hace uso de la libreria sweet Alert con el objetivo de agregar el icono de carrito -->
           <i class="fa fa-cart-plus"></i>
         </button>
       </div>
-
+      <!-- Se agrega un dropdownn para mostrar la opciones de perfil  y cerrar sesion -->
       <div class="dropdownn">
         <button class="dropbtnn">
+          <!-- Se hace uso de la libreria sweet Alert con el objetivo de agregar el icono de usuario -->
           <i class="fa fa-user"></i>
         </button>
         <div class="dropdown-contentt">
           <a>Perfil</a>
+          <!-- Al cerrar sesion redirige nuevamente al login -->
           <a routerLink="/login">Cerrar sesión</a>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Se agrega otro router outlet dentro del contenedor con el objetivo de renderiza allí los hijos de menu -->
   <div class="container">
     <router-outlet></router-outlet>
   </div>
 
+  <!-- Se Crea el pie de pagina que se encarga de poseer toda la información de contacto -->
   <footer>
     <div class="footer-container">
+      <!-- Se crea la división en el pie de pagina y se usan listas para mostrar toda la información -->
       <div class="footer-left">
         <h3>SuperMarket Smallville</h3>
         <p>Dirección de la empresa, ciudad, país</p>
