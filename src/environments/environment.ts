@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  urlProductos: "https://run.mocky.io/v3/13124748-e993-43af-9ea5-d1c5ea47af50"
+  urlProductos: "http://localhost:3001"
 };
 
 /*

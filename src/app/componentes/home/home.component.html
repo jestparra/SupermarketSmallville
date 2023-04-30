@@ -25,51 +25,16 @@
 
 <!-- Se crea la seccion de promociones  -->
 <h1>Promociones</h1>
-<div class="card">
+<div class="card" *ngFor="let prod of productosDescuento">
   <div class="card-body">
     <!-- Se utlizan las imagenes que se encuentran el los assets del proyecto -->
-    <img src="../../../assets/Imagenes/1.webp" alt="Avatar" style="width:100%">
+    <img [src]="'../../../assets/Imagenes/'+prod.imagenes" alt="Avatar" style="width:100%">
     <div class="container">
-      <h3>Galletas Orego</h3>
-      <p>$12.000</p>
-      <!-- Se hace uso de la estrellas para mostrar la calidad de los productos -->
-      <div class="estrellas">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-      </div>
+      <h3>{{prod.nombreProducto}}</h3>
+      <h4>Descuento: {{prod.descuento}}%</h4>
+      <p>{{prod.precio}}$</p>
     </div>
   </div>
 </div>
-<div class="card">
-  <div class="card-body">
-    <img src="../../../assets/Imagenes/2.webp" alt="Avatar" style="width:100%">
-    <div class="container">
-      <h3>Tostacos</h3>
-      <p>$2.000</p>
-      <div class="estrellas">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="card">
-  <div class="card-body">
-    <img src="../../../assets/Imagenes/3.webp" alt="Avatar" style="width:100%">
-    <div class="container">
-      <h3>Chocolatina Jumbo</h3>
-      <p>$4.000</p>
-      <div class="estrellas">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star-half-o"></i>
-      </div>
-    </div>
-  </div>
-</div>
+
 

@@ -13,6 +13,7 @@ import { QuienesSomosComponent } from './componentes/quienes-somos/quienes-somos
 import { CarritoComprasComponent } from './componentes/carrito-compras/carrito-compras.component';
 import { ContactanosComponent } from './componentes/contactanos/contactanos.component';
 import { PagosComponent } from './componentes/pagos/pagos.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PagosComponent } from './componentes/pagos/pagos.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

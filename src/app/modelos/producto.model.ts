@@ -1,5 +1,9 @@
 export class productos{
-  url: string;
-  nombre: string;
+  _id: string;
+  imagenes: string;
+  nombreProducto: string;
   precio: number;
+  descripcion: string;
+  descuento: number;
+  unidades: number;
 }
