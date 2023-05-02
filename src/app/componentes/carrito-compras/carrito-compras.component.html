@@ -1,66 +1,25 @@
 <!-- Se generan las cartas de los productos que fueron añadidos al carrito -->
 <!-- Mejora: agregar un ngFor para evitar la repetitividad -->
-<div class="card">
+<div class="card" *ngFor="let prod of productosCarrito">
   <div class="card-body">
-    <img src="../../../assets/Imagenes/1.webp" alt="Avatar" style="width:100%">
+    <img [src]="'../../../assets/Imagenes/'+prod.imagenes" alt="Avatar" style="width:100%">
     <div class="values">
       <div class="container">
-        <h3>Galletas Oreo</h3>
-        <p>$12.000</p>
+        <h3>{{prod.nombreProducto}}</h3>
+        <h5>Cantidad: {{prod.unidades}}</h5>
+        <h5>Precio U: {{prod.precio}}$</h5>
+        <h5>SubTotal: {{prod.unidades*prod.precio}}$</h5>
       </div>
-      <div class="delete">
+      <div class="delete" (click)="EliminarProd(prod)">
         <!-- Se agrega el icono del basurero para eliminar el producto del carrito -->
         <i class="fa fa-trash"></i>
       </div>
     </div>
   </div>
 </div>
-<div class="card">
-  <div class="card-body">
-    <img src="../../../assets/Imagenes/2.webp" alt="Avatar" style="width:100%">
-    <div class="values">
-      <div class="container">
-        <h3>Tostacos</h3>
-        <p>$2.000</p>
-      </div>
-      <div class="delete">
-        <i class="fa fa-trash"></i>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="card">
-  <div class="card-body">
-    <img src="../../../assets/Imagenes/3.webp" alt="Avatar" style="width:100%">
-    <div class="values">
-      <div class="container">
-        <h3>Chocolatina Jumbo</h3>
-        <p>$4.000</p>
-      </div>
-      <div class="delete">
-        <i class="fa fa-trash"></i>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="card">
-  <div class="card-body">
-    <img src="../../../assets/Imagenes/4.webp" alt="Avatar" style="width:100%">
-    <div class="values">
-      <div class="container">
-        <h3>cheetos</h3>
-        <p>$3.000</p>
-      </div>
-      <div class="delete">
-        <i class="fa fa-trash"></i>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- Se agrega el total y el boton para ir a la pasarela de pagos -->
 <hr>
-<h1>Total: 21000$</h1>
+<h1>Total: {{this.total}}$</h1>
 <div class="pay">
   <button class="pay-btn" routerLink="/pagos">Pagar</button>
 </div>

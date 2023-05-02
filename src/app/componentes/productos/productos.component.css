@@ -31,3 +31,11 @@
 .anadir:hover{
   background-color: #f7b776;
 }
+
+.anandirCon{
+  text-align: right;
+}
+
+.modal-footer{
+  display: block !important;
+}

@@ -25,8 +25,17 @@
         <p>{{selectedProd.descripcion}}</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary anadir" >Añadir al carrito</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="OnCloseModal()">Cerrar</button>
+        <div class="form-group row">
+          <div class="col-sm-6">
+            <input type="number" class="form-control" id="input" placeholder="Cantidad" step="1" [(ngModel)]="cuantity">
+          </div>
+          <div class="col-sm-4 anandirCon">
+            <button type="button" class="btn btn-primary anadir" (click)="SaveCarProduct()"><i class="fa fa-cart-plus" aria-hidden="true"> Añadir</i></button>
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="OnCloseModal()">Cerrar</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

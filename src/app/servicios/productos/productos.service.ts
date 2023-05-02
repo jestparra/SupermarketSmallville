@@ -29,4 +29,24 @@ export class ProductosService {
     return this.httpClient.delete(environment.urlProductos+'/api/productos/'+productos._id)
       .pipe();
   }
+
+  public ObtenerProductosCarrito() {
+    return this.httpClient.get<Array<productos>>(environment.urlProductos+'/api/ProductosCarrito')
+      .pipe();
+  }
+
+  public RegistrarProductosCarrito(productos:productos) {
+    return this.httpClient.post(environment.urlProductos+'/api/ProductosCarrito',productos)
+      .pipe();
+  }
+
+  public ActualizarProductosCarrito(productos:productos) {
+    return this.httpClient.put(environment.urlProductos+'/api/ProductosCarrito/'+productos._id,productos)
+      .pipe();
+  }
+
+  public EliminarProductosCarrito(productos:productos) {
+    return this.httpClient.delete(environment.urlProductos+'/api/ProductosCarrito/'+productos._id)
+      .pipe();
+  }
 }
