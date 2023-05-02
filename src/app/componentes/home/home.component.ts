@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { productos } from 'src/app/modelos/producto.model';
 import { ProductosService } from 'src/app/servicios/productos/productos.service'
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-home',
@@ -27,5 +28,12 @@ export class HomeComponent implements OnInit {
     this.ProductosService.ObtenerProductos().subscribe(resp =>{
       this.productosDescuento = resp.filter(x => x.descuento);
     })
+  }
+  registrarSus(){
+    Swal.fire(
+      'Registrar Suscripción!',
+      'Se ha registrado la suscripción correctamente!',
+      'success'
+    )
   }
 }

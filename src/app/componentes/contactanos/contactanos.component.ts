@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-contactanos',
@@ -12,4 +13,11 @@ export class ContactanosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  registrar(){
+    Swal.fire(
+      'Registrar Contacto!',
+      'Se ha registrado el contacto correctamente!',
+      'success'
+    )
+  }
 }

@@ -19,16 +19,16 @@ export class LoginComponent implements OnInit {
   }
 
   Login(){
-    // this.usuariosService.Login(this.usuario).subscribe(resp =>{
-    //   if(resp.msg == 'Error credenciales'){
-    //     Swal.fire(
-    //       'Login!',
-    //       'Usuario o contraseña erroneos!',
-    //       'error'
-    //     )
-    //   }else{
+    this.usuariosService.Login(this.usuario).subscribe(resp =>{
+      if(resp.msg == 'Error credenciales'){
+        Swal.fire(
+          'Login!',
+          'Usuario o contraseña erroneos!',
+          'error'
+        )
+      }else{
         this.router.navigate(['/menu/home']);
-    //   }
-    // })
+      }
+    })
   }
 }
